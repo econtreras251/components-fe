@@ -4,9 +4,10 @@ import TwitterLogin from 'react-twitter-auth';
 class Twitter extends Component {
 
     onSuccess = response => {
-        alert('Se ha completado el Twitter Flow');
-        console.log(response);
-        this.setState({ isAuthenticated: true })
+        response.json().then(user => {
+            this.setState({isAuthenticated: true, user: user});
+            console.log(user);
+        });
     }
 
     onFailed = error => {
@@ -20,11 +21,16 @@ class Twitter extends Component {
 
     render() {
         console.log(this.state)
+
         return (
             <div>
                 <TwitterLogin loginUrl="http://localhost:4000/user/auth/twitter"
                         onFailure={this.onFailed} onSuccess={this.onSuccess}
-                        requestTokenUrl="http://localhost:4000/user/auth/twitter/reverse"/>
+                        requestTokenUrl="http://localhost:4000/user/auth/twitter/reverse"
+                        className="btn btn-outline-primary"
+                        text="Twitter"
+                        forceLogin={true}
+                        />
             </div>
         );
     }
