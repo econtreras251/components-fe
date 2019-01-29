@@ -1,0 +1,45 @@
+h3 {
+    color: #262a34;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 20px;
+}
+
+.widget {
+    margin-bottom: 40px;
+}
+
+/* new User Form */
+.widget form input[type="text"],
+.widget form input[type="email"],
+.widget form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-family: 'Roboto Condensed', sans-serif;
+    border: none;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+}
+
+.widget form a {
+    background: #0275d8;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    width: 120px;
+    border-radius: 3px;
+    transition: all .3s ease;
+}
+
+.widget form a:hover {
+    background: #025aa5;
+}

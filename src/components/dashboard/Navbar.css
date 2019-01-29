@@ -1,0 +1,21 @@
+a {
+    color: #fff;
+}
+
+/* Menu */
+.menu a {
+    display: block;
+    padding: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.menu a:hover {
+    background: #35ae6b;
+    text-decoration: none;
+}
+
+.menu a i {
+    margin-right: 15px;
+}

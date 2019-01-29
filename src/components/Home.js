@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 
 class Home extends Component {
     render(){
         return(
-            <div>
-                <Link to="/signin">Twitter</Link>
+            <div className="jumbotron jumbotron-fluid">
+                <div className="container">
+                    <h1 className="display-4">Fluid jumbotron</h1>
+                    <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                </div>
             </div>
         );
     }

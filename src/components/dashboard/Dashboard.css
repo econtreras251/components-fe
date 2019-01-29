@@ -1,0 +1,39 @@
+body {
+    background: #f2f2f2;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Side Bar */
+.side-bar {
+    background: #262a34;
+    color: #fff;
+    min-width: 300px;
+    min-height: 100vh;
+    padding: 0;
+}
+
+.side-bar .logo {
+    background: #0275db;
+    margin-bottom: 2px;
+}
+
+
+.side-bar .logo h2{
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* Main */
+.main {
+    padding-top: 40px;
+}
+
+.column {
+    padding-right: 40px;
+    padding-left: 40px;
+}
