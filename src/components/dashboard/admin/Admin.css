@@ -10,6 +10,7 @@ h3 {
     margin-bottom: 40px;
 }
 
+
 /* new User Form */
 .widget form input[type="text"],
 .widget form input[type="email"],
@@ -24,7 +25,6 @@ h3 {
 }
 
 .widget form a {
-    background: #0275d8;
     cursor: pointer;
     color: #fff;
     font-family: 'Roboto Condensed', sans-serif;
@@ -40,6 +40,16 @@ h3 {
     transition: all .3s ease;
 }
 
-.widget form a:hover {
+.widget form .confirm{
+    background: #0275d8;
+    position: absolute;
+    right: 2.3em;
+}
+
+.widget form .cancel{
+    background: #ce2f07;
+}
+
+.widget form .confirm:hover{
     background: #025aa5;
 }
